@@ -3,12 +3,9 @@ package revel
 import (
 	"compress/gzip"
 	"compress/zlib"
-	"io"
 	"net/http"
 	"strings"
 )
-
-type CompressCreator func(io.Writer) WriteFlusher
 
 type WriteFlusher interface {
 	Write([]byte) (int, error)
