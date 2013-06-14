@@ -124,6 +124,15 @@ before the entire template has been fully rendered.
 Default: false
 
 ***
+#### results.compressed
+
+Enables [HTTP Compression](https://en.wikipedia.org/wiki/HTTP_compression) methods
+for compressing outgoing data. Supports gzip and deflate modes of compression.
+Compression can decrease the amount of bandwidth used and transfer time of resources.
+
+Default: false
+
+***
 #### results.pretty
 
 Configures [`RenderXml`](../docs/godoc/controller.html#RenderXml) and
